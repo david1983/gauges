@@ -31,8 +31,8 @@ component('appDiv', {
         })
         $interval(()=>{
             if(this.data)
-            indicator.style.transform = "translateX(-50%) translateY(-50%)  rotateZ(" + this.data + "deg)"
-        },60)
+            indicator.style.transform = "translateX(-52.5%) translateY(-50.5%)  rotateZ(" + this.data + "deg)"
+        },30)
     },
     bindings: {
         data: '='

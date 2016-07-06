@@ -16,15 +16,18 @@
   <![endif]-->
 </head>
 
-<body ng-controller="mainCtrl as vm">
+<body ng-controller="mainCtrl as vm" >
+
   <div style="display:none;">
   <img id="t" src="/img/tach.png" > 
   <img id="t2" src="/img/tachempty.png" >
   <img id="i" src="/img/indicator.png" >       
   </div>
-  <div style="background-color: #fff;"> data:{{vm.test}}</div>
-  <app-div data=vm.test></app-div>
-  <input type="range" min=0 max=360 ng-model="val">
+  <div style="overflow:hidden">    
+      <app-div data=vm.test></app-div>
+      <input type="range" min=0 max=360 ng-init="vm.test=0" ng-model="vm.test">
+  </div>
+  
 
   <script src="/js/cmp/appCmp.js"></script>
   <script src="/js/srvc/sensor.js"></script>
