@@ -1,0 +1,43 @@
+<style>
+    #tachBckgrnd{
+        overflow:hidden;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translateX(-50%) translateY(-50%);
+        /*background-image: url('/img/tach.png');*/
+        /*background-size: cover;*/
+    }
+
+    #tach{
+        width:97%;
+    }
+
+    #indicator{
+        transform-origin: 50.3% 51%;
+        position:absolute;
+        left: 50%;
+        top: 50%;
+        /*transform: translateX(-100%) translateY(-100%);*/
+        transition:all 0.3s
+    }
+
+</style>
+
+<div id="tachBckgrnd">
+    <div style="background-color: #fff;"> data:{{data}}</div>
+    <img src="/img/tachempty.png" id="tach">
+    <div id="indicator">
+        <div style="
+        background: black;position:absolute;
+        width:10px;height:10px;
+        top:50%;left:50%;
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: 100%">
+
+        </div>
+        <img src="/img/indicator12.png" width="100%">
+    </div>
+
+    <!--<canvas id="c"></canvas> -->
+</div>
